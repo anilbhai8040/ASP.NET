@@ -1,0 +1,31 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Q2.aspx.cs" Inherits="Assignment2_Q2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:Label ID="Label1" runat="server" Text="Follow This Rules :"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+        <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem>Red</asp:ListItem>
+            <asp:ListItem>Yellow</asp:ListItem>
+            <asp:ListItem>Green</asp:ListItem>
+        </asp:DropDownList>
+        <br />
+        <br />
+        <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
+            Text="Follow Me" />
+        <br />
+        <br />
+        <asp:Label ID="Label2" runat="server"></asp:Label>
+    
+    </div>
+    </form>
+</body>
+</html>

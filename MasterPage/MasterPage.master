@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 1039px;
+        }
+        .style5
+        {
+        }
+        .style6
+        {
+            width: 829px;
+        }
+        .style7
+        {
+        }
+    </style>
+</head>
+<body>
+    
+        <form id="form1" runat="server">
+    
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        <table class="style1">
+            <tr>
+                <td class="style7">
+                    <asp:Image ID="Image1" runat="server" Height="100px" 
+                        ImageUrl="~/image/campus.png" Width="180px" />
+                </td>
+                <td class="style6" align="right">
+                    <h2  style="width: 499px; margin-left: 0px">Shree Adarsh BCA College</h2> </td>
+            </tr>
+            <tr>
+                <td class="style7">
+                    &nbsp;</td>
+                <td class="style6" align="right">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Width="400px">
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="About" Value="About" NavigateUrl="~/About.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Registration.aspx" Text="Registration" 
+                                Value="Registration"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/PhotoGallery.aspx" Text="Photo Gallery" 
+                                Value="Photo Gallery"></asp:MenuItem>
+                            <asp:MenuItem Text="Contact Us" Value="Contact Us" 
+                                NavigateUrl="~/contactus.aspx"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="style7">
+                    &nbsp;</td>
+                <td class="style6">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style7" colspan="2" align="center">
+                    <asp:AdRotator ID="AdRotator1" runat="server" Height="200px" Width="300px" 
+                        AdvertisementFile="~/XMLFile.xml" />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="style7">
+                    &nbsp;</td>
+                <td class="style6">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style5" colspan="2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style7">
+                    &nbsp;</td>
+                <td class="style6">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style7">
+                    &nbsp;</td>
+                <td class="style6">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style7">
+                    &nbsp;</td>
+                <td class="style6">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style5" align="center" colspan="2">
+                    <asp:Label ID="Label1" runat="server" Text="Copyright @ 2026" Width="200px"></asp:Label>
+                </td>
+            </tr>
+        </table>
+        </asp:ContentPlaceHolder>
+    </div>
+    
+        </form>
+            
+</body>
+</html>

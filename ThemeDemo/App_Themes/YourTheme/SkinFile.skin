@@ -1,0 +1,7 @@
+﻿<asp:Button SkinId="button1" runat="server" Text="Button" BackColor="Lime" 
+            BorderColor="#660066" ForeColor="#660066" Height="100px" Width="200px" 
+            Font-Bold="True" Font-Names="Times New Roman" Font-Size="XX-Large" />
+            
+<asp:Button SkinId="button4" runat="server" Text="Button" BackColor="#660066" 
+            BorderColor="Lime" ForeColor="Lime" Height="100px" Width="200px"
+            Font-Bold="True" Font-Names="Times New Roman" Font-Size="XX-Large" />
